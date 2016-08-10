@@ -1,0 +1,816 @@
+
+gandlas@chetuiwk1206 MINGW64 /d
+$ git clone https://github.com/arsdevops/Artigem-PIMS.git uma
+Cloning into 'uma'...
+Username for 'https://github.com': umamaheswarar
+remote: Counting objects: 261, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 261 (delta 0), reused 0 (delta 0), pack-reused 258
+Receiving objects: 100% (261/261), 14.58 MiB | 2.41 MiB/s, done.
+Resolving deltas: 100% (74/74), done.
+Checking connectivity... done.
+warning: remote HEAD refers to nonexistent ref, unable to checkout.
+
+
+gandlas@chetuiwk1206 MINGW64 /d
+$ git branch -a
+fatal: Not a git repository (or any of the parent directories): .git
+
+gandlas@chetuiwk1206 MINGW64 /d
+$ cd uma
+//Added comments
+gandlas@chetuiwk1206 MINGW64 /d/uma (master)
+$ git branch -a
+  remotes/origin/Artigem-IOS
+  remotes/origin/Artigem-UI
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (master)
+$ git branch -b ArtigemRS-Java
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    --set-upstream        change upstream info
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (master)
+$ git checkout -b ArtigemRS-Java
+Switched to a new branch 'ArtigemRS-Java'
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git branch
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .pmd
+        .project
+        .settings/
+        build/
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git add .
+warning: LF will be replaced by CRLF in .pmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/CollectionsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/ImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/ItemImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/ItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/PoliciesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/RoomImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/RoomsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/dto/ScheduledItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/security/controller/AuthenticationController.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/security/model/AuthenticationRequest.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/security/model/AuthenticationResponse.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/security/model/SpringSecurityUser.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/service/AppUserService.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/service/AppUserServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/utils/AppConstant.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in src/main/java/com/pims/utils/TokenUtils.java.
+The file will have its original line endings in your working directory.
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .classpath
+        new file:   .pmd
+        new file:   .project
+        new file:   .settings/.jsdtscope
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   .settings/org.eclipse.jst.j2ee.ejb.annotations.xdoclet.prefs
+        new file:   .settings/org.eclipse.ltk.core.refactoring.prefs
+        new file:   .settings/org.eclipse.m2e.core.prefs
+        new file:   .settings/org.eclipse.wst.common.component
+        new file:   .settings/org.eclipse.wst.common.project.facet.core.xml
+        new file:   .settings/org.eclipse.wst.jsdt.ui.superType.container
+        new file:   .settings/org.eclipse.wst.jsdt.ui.superType.name
+        new file:   .settings/org.eclipse.wst.validation.prefs
+        new file:   .settings/org.hibernate.eclipse.console.prefs
+        new file:   build/classes/main/webapp/WEB-INF/spring-web-servlet.xml
+        new file:   build/classes/main/webapp/WEB-INF/web.xml
+        new file:   build/classes/main/webapp/index.jsp
+        new file:   pom.xml
+        new file:   src/main/java/com/pims/base/dao/BaseDao.java
+        new file:   src/main/java/com/pims/base/dao/impl/BaseDaoImpl.java
+        new file:   src/main/java/com/pims/beans/Addr.java
+        new file:   src/main/java/com/pims/beans/Appraisal.java
+        new file:   src/main/java/com/pims/beans/Appuser.java
+        new file:   src/main/java/com/pims/beans/Attribute.java
+        new file:   src/main/java/com/pims/beans/Attributeset.java
+        new file:   src/main/java/com/pims/beans/AutoInsurancePolicy.java
+        new file:   src/main/java/com/pims/beans/Bayesian.java
+        new file:   src/main/java/com/pims/beans/Category.java
+        new file:   src/main/java/com/pims/beans/Chk.java
+        new file:   src/main/java/com/pims/beans/Claim.java
+        new file:   src/main/java/com/pims/beans/Collection.java
+        new file:   src/main/java/com/pims/beans/Comp.java
+        new file:   src/main/java/com/pims/beans/Company.java
+        new file:   src/main/java/com/pims/beans/CompanyContact.java
+        new file:   src/main/java/com/pims/beans/CompanyContactId.java
+        new file:   src/main/java/com/pims/beans/Contact.java
+        new file:   src/main/java/com/pims/beans/ContactEvent.java
+        new file:   src/main/java/com/pims/beans/ContactItemtype.java
+        new file:   src/main/java/com/pims/beans/ContactItemtypeId.java
+        new file:   src/main/java/com/pims/beans/CorporateUsers.java
+        new file:   src/main/java/com/pims/beans/Coverage.java
+        new file:   src/main/java/com/pims/beans/Coveragetype.java
+        new file:   src/main/java/com/pims/beans/Depreciation.java
+        new file:   src/main/java/com/pims/beans/Holdover.java
+        new file:   src/main/java/com/pims/beans/HomeInsurancePolicy.java
+        new file:   src/main/java/com/pims/beans/Image.java
+        new file:   src/main/java/com/pims/beans/Insurance.java
+        new file:   src/main/java/com/pims/beans/Invoice.java
+        new file:   src/main/java/com/pims/beans/Invoicelineitem.java
+        new file:   src/main/java/com/pims/beans/Item.java
+        new file:   src/main/java/com/pims/beans/Itemtype.java
+        new file:   src/main/java/com/pims/beans/ItemtypeContact.java
+        new file:   src/main/java/com/pims/beans/ItemtypeContactId.java
+        new file:   src/main/java/com/pims/beans/Itemvalue.java
+        new file:   src/main/java/com/pims/beans/Keyword.java
+        new file:   src/main/java/com/pims/beans/Keywordcount.java
+        new file:   src/main/java/com/pims/beans/Note.java
+        new file:   src/main/java/com/pims/beans/Permission.java
+        new file:   src/main/java/com/pims/beans/Phone.java
+        new file:   src/main/java/com/pims/beans/Policy.java
+        new file:   src/main/java/com/pims/beans/PolicyHolder.java
+        new file:   src/main/java/com/pims/beans/PostLossInventory.java
+        new file:   src/main/java/com/pims/beans/PreferredVendor.java
+        new file:   src/main/java/com/pims/beans/Resetcode.java
+        new file:   src/main/java/com/pims/beans/Reslock.java
+        new file:   src/main/java/com/pims/beans/Room.java
+        new file:   src/main/java/com/pims/beans/RoomTypes.java
+        new file:   src/main/java/com/pims/beans/Scheduleditem.java
+        new file:   src/main/java/com/pims/beans/Sequence.java
+        new file:   src/main/java/com/pims/beans/Session.java
+        new file:   src/main/java/com/pims/beans/VendorAddress.java
+        new file:   src/main/java/com/pims/controller/InventoryController.java
+        new file:   src/main/java/com/pims/controller/NearestServiceController.java
+        new file:   src/main/java/com/pims/controller/UserController.java
+        new file:   src/main/java/com/pims/dao/InventoryManagerDao.java
+        new file:   src/main/java/com/pims/dao/MediaFileUploadDao.java
+        new file:   src/main/java/com/pims/dao/NearByServicesDAO.java
+        new file:   src/main/java/com/pims/dao/SessionDao.java
+        new file:   src/main/java/com/pims/dao/UserDAO.java
+        new file:   src/main/java/com/pims/dao/impl/InventoryManagerDaoImpl.java
+        new file:   src/main/java/com/pims/dao/impl/MediaFileUploadDaoImpl.java
+        new file:   src/main/java/com/pims/dao/impl/NearByServicesDAOImpl.java
+        new file:   src/main/java/com/pims/dao/impl/SessionDaoImpl.java
+        new file:   src/main/java/com/pims/dao/impl/UserDAOImpl.java
+        new file:   src/main/java/com/pims/dto/AgentDTO.java
+        new file:   src/main/java/com/pims/dto/CategoryDTO.java
+        new file:   src/main/java/com/pims/dto/CollectionsDTO.java
+        new file:   src/main/java/com/pims/dto/DeleteRoomDTO.java
+        new file:   src/main/java/com/pims/dto/ForgetPasswordDTO.java
+        new file:   src/main/java/com/pims/dto/ImagesDTO.java
+        new file:   src/main/java/com/pims/dto/ItemDTO.java
+        new file:   src/main/java/com/pims/dto/ItemImagesDTO.java
+        new file:   src/main/java/com/pims/dto/ItemsDTO.java
+        new file:   src/main/java/com/pims/dto/LoginDTO.java
+        new file:   src/main/java/com/pims/dto/MediaFileDetailsDTO.java
+        new file:   src/main/java/com/pims/dto/NearByServiceDTO.java
+        new file:   src/main/java/com/pims/dto/PoliciesDTO.java
+        new file:   src/main/java/com/pims/dto/PolicyDTO.java
+        new file:   src/main/java/com/pims/dto/PropertyDTO.java
+        new file:   src/main/java/com/pims/dto/RegisterDTO.java
+        new file:   src/main/java/com/pims/dto/ResetPasswordDTO.java
+        new file:   src/main/java/com/pims/dto/RoomDTO.java
+        new file:   src/main/java/com/pims/dto/RoomImagesDTO.java
+        new file:   src/main/java/com/pims/dto/RoomsDTO.java
+        new file:   src/main/java/com/pims/dto/ScheduledItems.java
+        new file:   src/main/java/com/pims/dto/ScheduledItemsDTO.java
+        new file:   src/main/java/com/pims/dto/ServiceInfoDTO.java
+        new file:   src/main/java/com/pims/dto/SessionDTO.java
+        new file:   src/main/java/com/pims/dto/UsersDTO.java
+        new file:   src/main/java/com/pims/exception/AlreadyExistsException.java
+        new file:   src/main/java/com/pims/exception/CollectionAlreadyExistsException.java
+        new file:   src/main/java/com/pims/exception/CustomHttpStatus.java
+        new file:   src/main/java/com/pims/exception/CustomerException.java
+        new file:   src/main/java/com/pims/exception/ErrorResponse.java
+        new file:   src/main/java/com/pims/exception/ExceptionController.java
+        new file:   src/main/java/com/pims/exception/ItemAlreadyScheduledException.java
+        new file:   src/main/java/com/pims/exception/ResourceAccessException.java
+        new file:   src/main/java/com/pims/exception/SecurityError.java
+        new file:   src/main/java/com/pims/google/support/DistanceCalculator.java
+        new file:   src/main/java/com/pims/google/support/GoogleServices.java
+        new file:   src/main/java/com/pims/google/support/Location.java
+        new file:   src/main/java/com/pims/google/support/Results.java
+        new file:   src/main/java/com/pims/response/ExceptionObj.java
+        new file:   src/main/java/com/pims/response/ResponseObj.java
+        new file:   src/main/java/com/pims/security/controller/AuthenticationController.java
+        new file:   src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java
+        new file:   src/main/java/com/pims/security/model/AuthenticationRequest.java
+        new file:   src/main/java/com/pims/security/model/AuthenticationResponse.java
+        new file:   src/main/java/com/pims/security/model/SpringSecurityUser.java
+        new file:   src/main/java/com/pims/service/AppUserService.java
+        new file:   src/main/java/com/pims/service/AppUserServiceImpl.java
+        new file:   src/main/java/com/pims/service/InventoryManagerService.java
+        new file:   src/main/java/com/pims/service/MediaFileUploadService.java
+        new file:   src/main/java/com/pims/service/NearByServices.java
+        new file:   src/main/java/com/pims/service/SessionValidationService.java
+        new file:   src/main/java/com/pims/service/UserService.java
+        new file:   src/main/java/com/pims/service/impl/InventoryManagerServiceImpl.java
+        new file:   src/main/java/com/pims/service/impl/MediaFileUploadServiceImpl.java
+        new file:   src/main/java/com/pims/service/impl/NearByServicesImpl.java
+        new file:   src/main/java/com/pims/service/impl/SessionValidationServiceImpl.java
+        new file:   src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java
+        new file:   src/main/java/com/pims/service/impl/UserServiceImpl.java
+        new file:   src/main/java/com/pims/utils/AppConstant.java
+        new file:   src/main/java/com/pims/utils/EncryptionUtility.java
+        new file:   src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java
+        new file:   src/main/java/com/pims/utils/JSONUtils.java
+        new file:   src/main/java/com/pims/utils/MediaFileUploadUtility.java
+        new file:   src/main/java/com/pims/utils/SendMail.java
+        new file:   src/main/java/com/pims/utils/TokenUtils.java
+        new file:   src/main/java/com/pims/web/controller/CompanyController.java
+        new file:   src/main/java/com/pims/web/controller/UserWebController.java
+        new file:   src/main/java/com/pims/web/dao/CompanyDAO.java
+        new file:   src/main/java/com/pims/web/dao/UserWebDAO.java
+        new file:   src/main/java/com/pims/web/dao/impl/CompanyDAOImpl.java
+        new file:   src/main/java/com/pims/web/dao/impl/UserWebDAOImpl.java
+        new file:   src/main/java/com/pims/web/dto/CompanyDTO.java
+        new file:   src/main/java/com/pims/web/service/CompanyService.java
+        new file:   src/main/java/com/pims/web/service/UserWebService.java
+        new file:   src/main/java/com/pims/web/service/impl/CompanyServiceImpl.java
+        new file:   src/main/java/com/pims/web/service/impl/UserWebServiceImpl.java
+        new file:   src/main/resources/database.properties
+        new file:   src/main/resources/log4j.properties
+        new file:   src/main/resources/mailConfiguration.properties
+        new file:   src/main/webapp/META-INF/MANIFEST.MF
+        new file:   src/main/webapp/WEB-INF/DataSource.xml
+        new file:   src/main/webapp/WEB-INF/Hibernate.xml
+        new file:   src/main/webapp/WEB-INF/hibernate.reveng.xml
+        new file:   src/main/webapp/WEB-INF/rest-servlet.xml
+        new file:   src/main/webapp/WEB-INF/spring-security.xml
+        new file:   src/main/webapp/WEB-INF/web.xml
+
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git reset .
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .pmd
+        .project
+        .settings/
+        build/
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ArtigemRS-FI/
+        MySQL/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git add .
+warning: LF will be replaced by CRLF in ArtigemRS-FI/.pmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/CollectionsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ItemImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/PoliciesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/RoomImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/RoomsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/controller/AuthenticationController.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationRequest.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationResponse.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/SpringSecurityUser.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/AppUserService.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/AppUserServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/AppConstant.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/TokenUtils.java.
+The file will have its original line endings in your working directory.
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   ArtigemRS-FI/.classpath
+        new file:   ArtigemRS-FI/.pmd
+        new file:   ArtigemRS-FI/.project
+        new file:   ArtigemRS-FI/.settings/.jsdtscope
+        new file:   ArtigemRS-FI/.settings/org.eclipse.jdt.core.prefs
+        new file:   ArtigemRS-FI/.settings/org.eclipse.jst.j2ee.ejb.annotations.xdoclet.prefs
+        new file:   ArtigemRS-FI/.settings/org.eclipse.ltk.core.refactoring.prefs
+        new file:   ArtigemRS-FI/.settings/org.eclipse.m2e.core.prefs
+        new file:   ArtigemRS-FI/.settings/org.eclipse.wst.common.component
+        new file:   ArtigemRS-FI/.settings/org.eclipse.wst.common.project.facet.core.xml
+        new file:   ArtigemRS-FI/.settings/org.eclipse.wst.jsdt.ui.superType.container
+        new file:   ArtigemRS-FI/.settings/org.eclipse.wst.jsdt.ui.superType.name
+        new file:   ArtigemRS-FI/.settings/org.eclipse.wst.validation.prefs
+        new file:   ArtigemRS-FI/.settings/org.hibernate.eclipse.console.prefs
+        new file:   ArtigemRS-FI/build/classes/main/webapp/WEB-INF/spring-web-servlet.xml
+        new file:   ArtigemRS-FI/build/classes/main/webapp/WEB-INF/web.xml
+        new file:   ArtigemRS-FI/build/classes/main/webapp/index.jsp
+        new file:   ArtigemRS-FI/pom.xml
+        new file:   ArtigemRS-FI/src/main/java/com/pims/base/dao/BaseDao.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/base/dao/impl/BaseDaoImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Addr.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Appraisal.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Appuser.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Attribute.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Attributeset.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/AutoInsurancePolicy.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Bayesian.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Category.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Chk.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Claim.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Collection.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Comp.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Company.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/CompanyContact.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/CompanyContactId.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Contact.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/ContactEvent.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/ContactItemtype.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/ContactItemtypeId.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/CorporateUsers.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Coverage.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Coveragetype.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Depreciation.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Holdover.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/HomeInsurancePolicy.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Image.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Insurance.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Invoice.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Invoicelineitem.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Item.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Itemtype.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/ItemtypeContact.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/ItemtypeContactId.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Itemvalue.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Keyword.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Keywordcount.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Note.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Permission.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Phone.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Policy.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/PolicyHolder.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/PostLossInventory.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/PreferredVendor.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Resetcode.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Reslock.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Room.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/RoomTypes.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Scheduleditem.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Sequence.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/Session.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/beans/VendorAddress.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/controller/InventoryController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/controller/NearestServiceController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/controller/UserController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/InventoryManagerDao.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/MediaFileUploadDao.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/NearByServicesDAO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/SessionDao.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/UserDAO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/impl/InventoryManagerDaoImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/impl/MediaFileUploadDaoImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/impl/NearByServicesDAOImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/impl/SessionDaoImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dao/impl/UserDAOImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/AgentDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/CategoryDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/CollectionsDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/DeleteRoomDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ForgetPasswordDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ImagesDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ItemDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ItemImagesDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ItemsDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/LoginDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/MediaFileDetailsDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/NearByServiceDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/PoliciesDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/PolicyDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/PropertyDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/RegisterDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ResetPasswordDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/RoomDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/RoomImagesDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/RoomsDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItems.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItemsDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/ServiceInfoDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/SessionDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/dto/UsersDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/AlreadyExistsException.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/CollectionAlreadyExistsException.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/CustomHttpStatus.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/CustomerException.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/ErrorResponse.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/ExceptionController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/ItemAlreadyScheduledException.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/ResourceAccessException.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/exception/SecurityError.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/google/support/DistanceCalculator.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/google/support/GoogleServices.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/google/support/Location.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/google/support/Results.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/response/ExceptionObj.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/response/ResponseObj.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/security/controller/AuthenticationController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationRequest.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationResponse.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/security/model/SpringSecurityUser.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/AppUserService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/AppUserServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/InventoryManagerService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/MediaFileUploadService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/NearByServices.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/SessionValidationService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/UserService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/InventoryManagerServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/MediaFileUploadServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/NearByServicesImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/SessionValidationServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/service/impl/UserServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/AppConstant.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/EncryptionUtility.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/JSONUtils.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/MediaFileUploadUtility.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/SendMail.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/utils/TokenUtils.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/controller/CompanyController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/controller/UserWebController.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/dao/CompanyDAO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/dao/UserWebDAO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/dao/impl/CompanyDAOImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/dao/impl/UserWebDAOImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/dto/CompanyDTO.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/service/CompanyService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/service/UserWebService.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/service/impl/CompanyServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/java/com/pims/web/service/impl/UserWebServiceImpl.java
+        new file:   ArtigemRS-FI/src/main/resources/database.properties
+        new file:   ArtigemRS-FI/src/main/resources/log4j.properties
+        new file:   ArtigemRS-FI/src/main/resources/mailConfiguration.properties
+        new file:   ArtigemRS-FI/src/main/webapp/META-INF/MANIFEST.MF
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/DataSource.xml
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/Hibernate.xml
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/hibernate.reveng.xml
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/rest-servlet.xml
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/spring-security.xml
+        new file:   ArtigemRS-FI/src/main/webapp/WEB-INF/web.xml
+        new file:   MySQL/Dump20160810.zip
+
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git commit -m "Java source code is committed along with sql dump"
+[ArtigemRS-Java (root-commit) 78ca7aa] Java source code is committed along with sql dump
+ Committer: Gandla Santhoshkumar <gandlas@chetu.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+warning: LF will be replaced by CRLF in ArtigemRS-FI/.pmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/CollectionsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ItemImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/PoliciesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/RoomImagesDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/RoomsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItemsDTO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/controller/AuthenticationController.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationRequest.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationResponse.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/security/model/SpringSecurityUser.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/AppUserService.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/AppUserServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/AppConstant.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ArtigemRS-FI/src/main/java/com/pims/utils/TokenUtils.java.
+The file will have its original line endings in your working directory.
+ 171 files changed, 20167 insertions(+)
+ create mode 100644 ArtigemRS-FI/.classpath
+ create mode 100644 ArtigemRS-FI/.pmd
+ create mode 100644 ArtigemRS-FI/.project
+ create mode 100644 ArtigemRS-FI/.settings/.jsdtscope
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.jst.j2ee.ejb.annotations.xdoclet.prefs
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.ltk.core.refactoring.prefs
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.m2e.core.prefs
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.wst.common.component
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.wst.common.project.facet.core.xml
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.wst.jsdt.ui.superType.container
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.wst.jsdt.ui.superType.name
+ create mode 100644 ArtigemRS-FI/.settings/org.eclipse.wst.validation.prefs
+ create mode 100644 ArtigemRS-FI/.settings/org.hibernate.eclipse.console.prefs
+ create mode 100644 ArtigemRS-FI/build/classes/main/webapp/WEB-INF/spring-web-servlet.xml
+ create mode 100644 ArtigemRS-FI/build/classes/main/webapp/WEB-INF/web.xml
+ create mode 100644 ArtigemRS-FI/build/classes/main/webapp/index.jsp
+ create mode 100644 ArtigemRS-FI/pom.xml
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/base/dao/BaseDao.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/base/dao/impl/BaseDaoImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Addr.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Appraisal.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Appuser.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Attribute.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Attributeset.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/AutoInsurancePolicy.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Bayesian.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Category.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Chk.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Claim.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Collection.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Comp.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Company.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/CompanyContact.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/CompanyContactId.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Contact.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/ContactEvent.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/ContactItemtype.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/ContactItemtypeId.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/CorporateUsers.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Coverage.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Coveragetype.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Depreciation.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Holdover.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/HomeInsurancePolicy.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Image.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Insurance.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Invoice.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Invoicelineitem.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Item.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Itemtype.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/ItemtypeContact.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/ItemtypeContactId.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Itemvalue.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Keyword.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Keywordcount.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Note.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Permission.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Phone.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Policy.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/PolicyHolder.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/PostLossInventory.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/PreferredVendor.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Resetcode.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Reslock.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Room.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/RoomTypes.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Scheduleditem.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Sequence.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/Session.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/beans/VendorAddress.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/controller/InventoryController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/controller/NearestServiceController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/controller/UserController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/InventoryManagerDao.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/MediaFileUploadDao.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/NearByServicesDAO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/SessionDao.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/UserDAO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/impl/InventoryManagerDaoImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/impl/MediaFileUploadDaoImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/impl/NearByServicesDAOImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/impl/SessionDaoImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dao/impl/UserDAOImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/AgentDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/CategoryDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/CollectionsDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/DeleteRoomDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ForgetPasswordDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ImagesDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ItemDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ItemImagesDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ItemsDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/LoginDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/MediaFileDetailsDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/NearByServiceDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/PoliciesDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/PolicyDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/PropertyDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/RegisterDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ResetPasswordDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/RoomDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/RoomImagesDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/RoomsDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItems.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ScheduledItemsDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/ServiceInfoDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/SessionDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/dto/UsersDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/AlreadyExistsException.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/CollectionAlreadyExistsException.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/CustomHttpStatus.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/CustomerException.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/ErrorResponse.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/ExceptionController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/ItemAlreadyScheduledException.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/ResourceAccessException.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/exception/SecurityError.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/google/support/DistanceCalculator.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/google/support/GoogleServices.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/google/support/Location.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/google/support/Results.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/response/ExceptionObj.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/response/ResponseObj.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/security/controller/AuthenticationController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/security/filter/AuthenticationTokenFilter.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationRequest.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/security/model/AuthenticationResponse.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/security/model/SpringSecurityUser.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/AppUserService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/AppUserServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/InventoryManagerService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/MediaFileUploadService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/NearByServices.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/SessionValidationService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/UserService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/InventoryManagerServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/MediaFileUploadServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/NearByServicesImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/SessionValidationServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/UserDetailsServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/service/impl/UserServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/AppConstant.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/EncryptionUtility.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/EntryPointUnauthorizedHandler.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/JSONUtils.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/MediaFileUploadUtility.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/SendMail.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/utils/TokenUtils.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/controller/CompanyController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/controller/UserWebController.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/dao/CompanyDAO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/dao/UserWebDAO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/dao/impl/CompanyDAOImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/dao/impl/UserWebDAOImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/dto/CompanyDTO.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/service/CompanyService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/service/UserWebService.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/service/impl/CompanyServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/java/com/pims/web/service/impl/UserWebServiceImpl.java
+ create mode 100644 ArtigemRS-FI/src/main/resources/database.properties
+ create mode 100644 ArtigemRS-FI/src/main/resources/log4j.properties
+ create mode 100644 ArtigemRS-FI/src/main/resources/mailConfiguration.properties
+ create mode 100644 ArtigemRS-FI/src/main/webapp/META-INF/MANIFEST.MF
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/DataSource.xml
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/Hibernate.xml
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/hibernate.reveng.xml
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/rest-servlet.xml
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/spring-security.xml
+ create mode 100644 ArtigemRS-FI/src/main/webapp/WEB-INF/web.xml
+ create mode 100644 MySQL/Dump20160810.zip
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git status
+On branch ArtigemRS-Java
+nothing to commit, working tree clean
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
+$ git remote -v
+origin  https://github.com/arsdevops/Artigem-PIMS.git (fetch)
+origin  https://github.com/arsdevops/Artigem-PIMS.git (push)
+
+gandlas@chetuiwk1206 MINGW64 /d/uma (ArtigemRS-Java)
