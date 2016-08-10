@@ -1,4 +1,4 @@
-
+//Added comments top
 gandlas@chetuiwk1206 MINGW64 /d
 $ git clone https://github.com/arsdevops/Artigem-PIMS.git uma
 Cloning into 'uma'...
@@ -18,7 +18,8 @@ fatal: Not a git repository (or any of the parent directories): .git
 
 gandlas@chetuiwk1206 MINGW64 /d
 $ cd uma
-//Added comments
+
+
 gandlas@chetuiwk1206 MINGW64 /d/uma (master)
 $ git branch -a
   remotes/origin/Artigem-IOS
