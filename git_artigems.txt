@@ -1,6 +1,9 @@
 //Added comments top
 ////Added comments1
 /Added comments2 from branch
+=======
+Added comments1 directly form git
+>>>>>>> 1763096835f6128ef6b105e9c0187f32f2f5883c
 gandlas@chetuiwk1206 MINGW64 /d
 $ git clone https://github.com/arsdevops/Artigem-PIMS.git uma
 Cloning into 'uma'...
