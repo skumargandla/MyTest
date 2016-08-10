@@ -1,4 +1,5 @@
 //Added comments top
+////Added comments1
 gandlas@chetuiwk1206 MINGW64 /d
 $ git clone https://github.com/arsdevops/Artigem-PIMS.git uma
 Cloning into 'uma'...
